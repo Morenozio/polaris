@@ -1,0 +1,89 @@
+import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+
+export const metadata = {
+  title: 'Contact Us | PT Polaris Multi Dimensi',
+  description: 'Get in touch with PT Polaris Multi Dimensi for high-quality chemical raw materials. Located in Tangerang, Indonesia.',
+};
+
+export default function ContactPage() {
+  return (
+    <div className="flex flex-col min-h-screen pt-20 bg-surface">
+      
+      <header className="bg-surface-container-low py-20 border-b border-outline/10 text-center px-8">
+        <div className="max-w-4xl mx-auto">
+          <span className="label-sm uppercase tracking-widest text-outline text-[11px] mb-4 block font-bold">Get In Touch</span>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-headline text-black dark:text-white">Contact Our Team</h1>
+          <p className="text-lg text-secondary font-light max-w-2xl mx-auto">
+            Our technical sales and logistics teams are ready to assist you bridging your raw material requirements.
+          </p>
+        </div>
+      </header>
+
+      <main className="py-24 px-8 max-w-5xl mx-auto w-full">
+        
+        <h2 className="text-3xl font-bold font-headline mb-12 text-black text-center">Office Details</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+              <MapPin size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-black font-headline mb-2">Headquarters &amp; Logistics Hub</h3>
+              <p className="text-secondary font-light">Tangerang, Banten</p>
+              <p className="text-secondary font-light">Indonesia 15xxxx</p>
+            </div>
+          </div>
+
+          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-[#25D366]/10 rounded-full flex items-center justify-center text-[#25D366] flex-shrink-0">
+              <Phone size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-black font-headline mb-2">Phone / WhatsApp</h3>
+              <p className="text-secondary font-light">+62 811 1234 567 (Sales)</p>
+              <p className="text-secondary font-light">+62 21 0000 0000 (Office)</p>
+            </div>
+          </div>
+
+          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+              <Mail size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-black font-headline mb-2">Email Directory</h3>
+              <p className="text-secondary font-light mb-1"><strong>Inquiries:</strong> info@polaris-multidimensi.com</p>
+              <p className="text-secondary font-light"><strong>Sales:</strong> sales@polaris-multidimensi.com</p>
+            </div>
+          </div>
+          
+          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+              <Clock size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-black font-headline mb-2">Business Hours</h3>
+              <p className="text-secondary font-light">Monday - Friday: 08:30 - 17:00 WIB</p>
+              <p className="text-secondary font-light">Saturday &amp; Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      {/* Map block */}
+      <section className="bg-surface-container-low border-t border-outline/10">
+        <div className="h-96 w-full bg-surface-container-high relative flex items-center justify-center overflow-hidden">
+          <div className="z-10 bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border border-outline/10 text-center">
+            <MapPin className="text-primary mx-auto mb-2" size={32} />
+            <h3 className="font-bold text-black font-headline">Map API Integration</h3>
+            <p className="text-sm text-secondary">A Google Maps embed will be rendered here.</p>
+          </div>
+          {/* Subtle grid to simulate map background */}
+          <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'radial-gradient(circle at 10px 10px, black 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
+        </div>
+      </section>
+
+    </div>
+  );
+}

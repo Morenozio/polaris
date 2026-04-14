@@ -1,0 +1,250 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.heroSection {
+  background-color: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroContent {
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: var(--text-main);
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heroBtn {
+  font-size: 1.05rem;
+  padding: 0.875rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding: 8rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 4rem;
+  }
+}
+
+/* Strengths Section */
+.strengthsSection {
+  background-color: var(--bg-primary);
+}
+
+.strengthsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .strengthsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.strengthCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strengthCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.strengthTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Products Section */
+.productsSection {
+  background-color: var(--text-main);
+  color: var(--bg-primary);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.seeAllLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-light);
+  font-weight: 500;
+}
+
+.seeAllLink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.productCard {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.productHeader {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border);
+}
+
+.productBody {
+  padding: 1.5rem;
+  background-color: var(--bg-primary);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productBody p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.productLink {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.productLink:hover {
+  text-decoration: underline;
+}
+
+/* Industries Section */
+.industriesSection {
+  background-color: var(--bg-secondary);
+}
+
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .industriesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.industryCard {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.industryCard:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+  color: var(--accent);
+}
+
+.industryIcon {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.industryCard:hover .industryIcon {
+  color: var(--accent);
+}
+
+/* CTA Section */
+.ctaSection {
+  background-color: var(--accent-light);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.ctaContainer {
+  max-width: 600px;
+}
