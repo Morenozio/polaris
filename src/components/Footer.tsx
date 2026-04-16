@@ -33,7 +33,15 @@ export default function Footer() {
         <div>
           <h4 className="font-body text-xs tracking-wide uppercase font-bold mb-6 text-stone-900 dark:text-stone-100">Contact</h4>
           <p className="text-xs text-stone-500 mb-2">Millenium Industrial Estate, Tangerang, 15710</p>
-          <p className="text-xs text-stone-500 mb-2">+62 812 7733 5701</p>
+          <a 
+            href="https://wa.me/6281277335701" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-xs text-stone-500 mb-2 flex items-center gap-2 hover:text-[#25D366] transition-colors"
+          >
+            <img src="/whatsapp.png" alt="WhatsApp" className="w-4 h-4 object-contain" />
+            +62 812 7733 5701
+          </a>
           <p className="text-xs text-stone-500">info@polaris-multidimensi.com</p>
         </div>
       </div>

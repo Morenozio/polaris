@@ -80,7 +80,8 @@ export default function AboutPage() {
           <p className="text-xl text-white/80 font-light leading-relaxed mb-12 max-w-3xl mx-auto">
             Our primary distribution operations are strategically anchored in <strong>Millenium Industrial Estate, Tangerang</strong>. This geographical advantage provides unparalleled access to major toll networks and seaports, ensuring rapid deployment of chemical materials to manufacturing hubs in Greater Jakarta, West Java, and beyond.
           </p>
-          <Link href="/contact" className="inline-block bg-white text-black px-10 py-4 rounded-lg font-bold hover:bg-stone-200 transition-colors shadow-lg">
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-black px-10 py-4 rounded-lg font-bold hover:bg-stone-200 transition-colors shadow-lg">
+            <img src="/whatsapp.png" alt="WhatsApp" className="w-5 h-5 object-contain" />
             Connect With Our Team
           </Link>
         </div>
