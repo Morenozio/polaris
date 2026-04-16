@@ -82,16 +82,18 @@ export default function ContactPage() {
       </main>
 
       {/* Map block */}
-      <section className="bg-surface-container-low border-t border-outline/10">
-        <div className="h-96 w-full bg-surface-container-high relative flex items-center justify-center overflow-hidden">
-          <div className="z-10 bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border border-outline/10 text-center">
-            <MapPin className="text-primary mx-auto mb-2" size={32} />
-            <h3 className="font-bold text-black font-headline">Map API Integration</h3>
-            <p className="text-sm text-secondary">A Google Maps embed will be rendered here.</p>
-          </div>
-          {/* Subtle grid to simulate map background */}
-          <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'radial-gradient(circle at 10px 10px, black 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
-        </div>
+      <section className="bg-surface-container-low border-t border-outline/10 h-96 w-full relative">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.618698944588!2d106.4947!3d-6.2168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42008f7f509935%3A0xbcc0eeb04e104e7b!2sMillenium%20Industrial%20Estate!5e0!3m2!1sen!2sid!4v171327!5m2!1sen!2sid" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Polaris Headquarters Location"
+          className="grayscale hover:grayscale-0 transition-all duration-700"
+        ></iframe>
       </section>
 
     </div>
