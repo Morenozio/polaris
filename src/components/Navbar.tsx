@@ -27,9 +27,6 @@ export default function Navbar() {
           <Link href="/products" className="font-headline tracking-tight font-medium text-sm text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white transition-colors">
             Products
           </Link>
-          <Link href="/industries" className="font-headline tracking-tight font-medium text-sm text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white transition-colors">
-            Industries
-          </Link>
 
           <Link href="/contact" className="bg-primary text-on-primary px-6 py-2 rounded-lg text-sm font-medium hover:opacity-80 transition-opacity">
             Contact Us

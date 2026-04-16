@@ -36,10 +36,9 @@ export default function ContactPage() {
                 href="https://wa.me/6281277335701?text=Hello%20Ary,%20I%20would%20like%20to%20inquire%20about%20chemical%20raw%20materials%20from%20PT%20Polaris." 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-black hover:text-[#25D366] transition-colors inline-flex items-center gap-2"
+                className="text-lg font-bold text-black hover:text-[#25D366] transition-colors"
               >
                 +62 812 7733 5701
-                <span className="text-[10px] bg-[#25D366] text-white px-2 py-0.5 rounded-full uppercase tracking-tighter">WA Available</span>
               </a>
             </div>
           </div>

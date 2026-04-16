@@ -16,7 +16,6 @@ export default function Footer() {
           <div className="flex flex-col gap-3">
             <Link className="font-body text-xs tracking-wide uppercase text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white underline decoration-stone-300 transition-all duration-200" href="/">Home</Link>
             <Link className="font-body text-xs tracking-wide uppercase text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white underline decoration-stone-300 transition-all duration-200" href="/about">About Us</Link>
-            <Link className="font-body text-xs tracking-wide uppercase text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white underline decoration-stone-300 transition-all duration-200" href="/industries">Logistics Data</Link>
             <Link className="font-body text-xs tracking-wide uppercase text-stone-500 dark:text-stone-400 hover:text-black dark:hover:text-white underline decoration-stone-300 transition-all duration-200" href="/contact">Contact</Link>
           </div>
         </div>
