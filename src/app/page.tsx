@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProductsSlider from '@/components/ProductsSlider';
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
                 Contact Us <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </Link>
               <Link href="/products" className="border border-outline/20 text-primary px-8 py-4 rounded-lg font-bold tracking-tight hover:bg-surface-container-low transition-all">
-                View Product Range
+                View Products
               </Link>
             </div>
           </div>
@@ -62,58 +63,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section className="py-24 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-end mb-16">
+      {/* Products Slider Section */}
+      <section className="py-24 bg-surface overflow-hidden">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="flex justify-between items-end mb-12">
             <div>
               <span className="label-sm uppercase tracking-widest text-outline text-[10px] mb-2 block font-bold">Catalog</span>
               <h2 className="text-4xl font-bold tracking-tighter font-headline text-black">Raw Material Portfolio</h2>
             </div>
             <Link className="text-sm font-bold border-b-2 border-primary pb-1 text-black hover:text-outline transition-colors" href="/products">View All Products</Link>
           </div>
-
-          {/* Bento Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {/* Large Card */}
-            <div className="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between hover:shadow-[0_10px_40px_rgba(26,28,28,0.04)] transition-all group">
-              <div>
-                <span className="material-symbols-outlined text-4xl mb-6 text-primary" style={{fontVariationSettings: "'FILL' 1"}}>science</span>
-                <h3 className="text-3xl font-bold mb-4 tracking-tight font-headline text-black">Specialty Solvents</h3>
-                <p className="text-secondary font-light leading-relaxed mb-8">High-purity solvents designed for precise chemical reactions and industrial cleaning applications across pharmaceutical and electronics industries.</p>
-              </div>
-              <div className="flex items-center justify-between text-black">
-                <span className="text-[10px] uppercase tracking-widest text-outline font-bold">CAS Certified</span>
-                <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </div>
-            </div>
-
-            {/* Small Cards */}
-            <div className="bg-surface-container-lowest p-8 rounded-xl hover:shadow-[0_10px_40px_rgba(26,28,28,0.04)] transition-all">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">opacity</span>
-              <h3 className="text-lg font-bold mb-2 font-headline text-black">Resins &amp; Binders</h3>
-              <p className="text-xs text-secondary font-light">Essential components for high-performance coatings and adhesive manufacturing.</p>
-            </div>
-            
-            <div className="bg-surface-container-lowest p-8 rounded-xl hover:shadow-[0_10px_40px_rgba(26,28,28,0.04)] transition-all">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">grain</span>
-              <h3 className="text-lg font-bold mb-2 font-headline text-black">Pigments</h3>
-              <p className="text-xs text-secondary font-light">Premium grade industrial pigments for consistent color performance in plastics and paints.</p>
-            </div>
-            
-            <div className="bg-surface-container-lowest p-8 rounded-xl hover:shadow-[0_10px_40px_rgba(26,28,28,0.04)] transition-all">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">biotech</span>
-              <h3 className="text-lg font-bold mb-2 font-headline text-black">Additives</h3>
-              <p className="text-xs text-secondary font-light">Performance enhancers for UV stabilization and flame retardancy in technical materials.</p>
-            </div>
-            
-            <div className="bg-surface-container-lowest p-8 rounded-xl hover:shadow-[0_10px_40px_rgba(26,28,28,0.04)] transition-all">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">thermostat</span>
-              <h3 className="text-lg font-bold mb-2 font-headline text-black">Catalysts</h3>
-              <p className="text-xs text-secondary font-light">Precision agents for optimizing chemical reaction rates in polymer production.</p>
-            </div>
-          </div>
         </div>
+        <ProductsSlider />
       </section>
 
       {/* Our Portfolio (Partners) Section */}
@@ -125,14 +86,13 @@ export default function Home() {
             <div className="w-12 h-1 bg-primary mx-auto mt-6"></div>
           </div>
           <div className="bg-white rounded-2xl p-12 shadow-sm border border-outline/5">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-12 gap-y-16 items-center justify-items-center">
-              {[...Array(9)].map((_, i) => (
-                <div key={i} className={`w-full flex justify-center px-4 ${i === 9 ? 'lg:col-start-3' : ''}`}>
-                  <img 
-                    alt="Partner Logo" 
-                    className="grayscale-logo max-h-12 w-auto object-contain" 
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uipF5zCOsrg8ZGycP5vDKsMsp4X0nanJmH__I7B3UkpUn1tcGA0Wkwx3-L-02BBTeW8bBkQ5JnAgDhmM21Ms8f8OLydWyUuiFQbXcbcxICSEoeg9oiAoFdTQhoNQ4I9kblUwD33EL5yD1Q4EAdERbzZSQokXd9xSAxgZc4gUp4Hm535gaJVQjhSxXujrQjCfNtVNtCTZVwjHL5v1kwvZdFxaiqpmsDdgk8moi4oxaLepEaJ677syGudtm-VI1Bq7UdkcKH3ec3L" 
-                    style={{width: '140px', height: '60px'}}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-12 gap-y-12 items-center justify-items-center">
+              {[1,2,3,4,5,6,7,8,9,10,11].map((n) => (
+                <div key={n} className="w-full flex justify-center px-4">
+                  <img
+                    alt={`Partner ${n}`}
+                    className="max-h-14 w-auto object-contain"
+                    src={`/partners/partner-${n}.png`}
                   />
                 </div>
               ))}
