@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import { Mail, MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 
 export const metadata = {
   title: 'Contact Us | PT Polaris Multi Dimensi',
@@ -24,6 +24,38 @@ export default function ContactPage() {
         <h2 className="text-3xl font-bold font-headline mb-12 text-black text-center">Office Details</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow ring-1 ring-[#25D366]/20">
+            <div className="w-12 h-12 bg-[#25D366]/10 rounded-full flex items-center justify-center text-[#25D366] flex-shrink-0">
+              <svg 
+                viewBox="0 0 24 24" 
+                width="24" 
+                height="24" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                fill="none" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="lucide lucide-whatsapp"
+              >
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"/>
+                <path d="M15.5 15.5l-3-3l-2.2 2.2c-.5.5-1.3.5-1.8 0l-1.4-1.4a1.27 1.27 0 0 1 0-1.8l2.2-2.2l-3-3"/>
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-black font-headline mb-2 text-[#25D366]">Sales Manager (WhatsApp)</h3>
+              <p className="text-secondary font-light mb-1">Direct support for inquiries and quotes.</p>
+              <a 
+                href="https://wa.me/628111234567?text=Hello%20Polaris,%20I%20would%20like%20to%20inquire%20about%20chemical%20raw%20materials." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-lg font-bold text-black hover:text-[#25D366] transition-colors inline-flex items-center gap-2"
+              >
+                +62 811 1234 567
+                <span className="text-[10px] bg-[#25D366] text-white px-2 py-0.5 rounded-full uppercase tracking-tighter">Online Now</span>
+              </a>
+            </div>
+          </div>
+
           <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
               <MapPin size={24} />
@@ -31,18 +63,7 @@ export default function ContactPage() {
             <div>
               <h3 className="font-bold text-lg text-black font-headline mb-2">Headquarters &amp; Logistics Hub</h3>
               <p className="text-secondary font-light">Tangerang, Banten</p>
-              <p className="text-secondary font-light">Indonesia 15xxxx</p>
-            </div>
-          </div>
-
-          <div className="bg-surface-container-lowest border border-outline/10 p-8 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-[#25D366]/10 rounded-full flex items-center justify-center text-[#25D366] flex-shrink-0">
-              <Phone size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-lg text-black font-headline mb-2">Phone / WhatsApp</h3>
-              <p className="text-secondary font-light">+62 811 1234 567 (Sales)</p>
-              <p className="text-secondary font-light">+62 21 0000 0000 (Office)</p>
+              <p className="text-secondary font-light">Indonesia 15143</p>
             </div>
           </div>
 

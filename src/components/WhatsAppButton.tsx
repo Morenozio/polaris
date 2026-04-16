@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 import styles from './WhatsAppButton.module.css';
 
 export default function WhatsAppButton() {
-  const phoneNumber = "628111234567"; // Placeholder, replace with actual
+  const phoneNumber = "628111234567";
   const message = "Hello PT Polaris, I would like to request a quote for chemical raw materials.";
   
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
