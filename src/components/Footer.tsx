@@ -32,7 +32,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-body text-xs tracking-wide uppercase font-bold mb-6 text-stone-900 dark:text-stone-100">Contact</h4>
-          <p className="text-xs text-stone-500 mb-2">Tangerang, Banten, Indonesia</p>
+          <p className="text-xs text-stone-500 mb-2">Millenium Industrial Estate, Tangerang, 15710</p>
           <p className="text-xs text-stone-500 mb-2">+62 812 7733 5701</p>
           <p className="text-xs text-stone-500">info@polaris-multidimensi.com</p>
         </div>

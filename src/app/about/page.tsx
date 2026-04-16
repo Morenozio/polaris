@@ -78,7 +78,7 @@ export default function AboutPage() {
           <MapPin size={48} className="text-white mx-auto mb-8 opacity-80" />
           <h2 className="text-3xl md:text-5xl font-bold font-headline mb-8 text-white tracking-tighter">Strategic Logistics Infrastructure</h2>
           <p className="text-xl text-white/80 font-light leading-relaxed mb-12 max-w-3xl mx-auto">
-            Our primary distribution operations are strategically anchored in <strong>Tangerang, Banten</strong>. This geographical advantage provides unparalleled access to major toll networks and seaports, ensuring rapid deployment of chemical materials to manufacturing hubs in Greater Jakarta, West Java, and beyond.
+            Our primary distribution operations are strategically anchored in <strong>Millenium Industrial Estate, Tangerang</strong>. This geographical advantage provides unparalleled access to major toll networks and seaports, ensuring rapid deployment of chemical materials to manufacturing hubs in Greater Jakarta, West Java, and beyond.
           </p>
           <Link href="/contact" className="inline-block bg-white text-black px-10 py-4 rounded-lg font-bold hover:bg-stone-200 transition-colors shadow-lg">
             Connect With Our Team

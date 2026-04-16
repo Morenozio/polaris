@@ -63,8 +63,9 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-black font-headline mb-2">Headquarters &amp; Logistics Hub</h3>
-              <p className="text-secondary font-light">Tangerang, Banten</p>
-              <p className="text-secondary font-light">Indonesia 15143</p>
+              <p className="text-secondary font-light">Jalan Millenium Raya Blok J6 No. 2,</p>
+              <p className="text-secondary font-light">Millenium Industrial Estate, Tigaraksa, Cikupa,</p>
+              <p className="text-secondary font-light">Tangerang, Banten, Indonesia 15710</p>
             </div>
           </div>
 
