@@ -42,16 +42,17 @@ export default function ContactPage() {
               </svg>
             </div>
             <div>
-              <h3 className="font-bold text-lg text-black font-headline mb-2 text-[#25D366]">Sales Manager (WhatsApp)</h3>
-              <p className="text-secondary font-light mb-1">Direct support for inquiries and quotes.</p>
+              <h3 className="font-bold text-lg text-black font-headline mb-0.5 text-[#25D366]">Ary Rahmansyah</h3>
+              <p className="text-xs font-bold text-secondary uppercase tracking-wider mb-2">Business Development Manager</p>
+              <p className="text-secondary font-light mb-3 text-sm italic">Direct support for inquiries and strategic partnerships.</p>
               <a 
-                href="https://wa.me/628111234567?text=Hello%20Polaris,%20I%20would%20like%20to%20inquire%20about%20chemical%20raw%20materials." 
+                href="https://wa.me/6281277335701?text=Hello%20Ary,%20I%20would%20like%20to%20inquire%20about%20chemical%20raw%20materials%20from%20PT%20Polaris." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-lg font-bold text-black hover:text-[#25D366] transition-colors inline-flex items-center gap-2"
               >
-                +62 811 1234 567
-                <span className="text-[10px] bg-[#25D366] text-white px-2 py-0.5 rounded-full uppercase tracking-tighter">Online Now</span>
+                +62 812 7733 5701
+                <span className="text-[10px] bg-[#25D366] text-white px-2 py-0.5 rounded-full uppercase tracking-tighter">WA Available</span>
               </a>
             </div>
           </div>
@@ -73,8 +74,8 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-black font-headline mb-2">Email Directory</h3>
-              <p className="text-secondary font-light mb-1"><strong>Inquiries:</strong> info@polaris-multidimensi.com</p>
-              <p className="text-secondary font-light"><strong>Sales:</strong> sales@polaris-multidimensi.com</p>
+              <p className="text-secondary font-light mb-1"><strong>Sales:</strong> ary@polaris.co.id</p>
+              <p className="text-secondary font-light"><strong>Inquiries:</strong> info@polaris-multidimensi.com</p>
             </div>
           </div>
           
