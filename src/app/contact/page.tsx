@@ -79,23 +79,24 @@ export default function ContactPage() {
           </div>
         </div>
 
+        {/* Map block integrated into main flow */}
+        <div className="mt-20 mb-24">
+          <h2 className="text-2xl font-bold font-headline mb-8 text-black">Global Operations Hub</h2>
+          <div className="h-96 w-full bg-surface-container-low border border-outline/10 rounded-2xl overflow-hidden shadow-sm relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.618698944588!2d106.4947!3d-6.2168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42008f7f509935%3A0xbcc0eeb04e104e7b!2sMillenium%20Industrial%20Estate!5e0!3m2!1sen!2sid!4v171327!5m2!1sen!2sid" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Polaris Headquarters Location"
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
       </main>
-
-      {/* Map block */}
-      <section className="bg-surface-container-low border-t border-outline/10 h-96 w-full relative">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.618698944588!2d106.4947!3d-6.2168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42008f7f509935%3A0xbcc0eeb04e104e7b!2sMillenium%20Industrial%20Estate!5e0!3m2!1sen!2sid!4v171327!5m2!1sen!2sid" 
-          width="100%" 
-          height="100%" 
-          style={{ border: 0 }} 
-          allowFullScreen 
-          loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Polaris Headquarters Location"
-          className="grayscale hover:grayscale-0 transition-all duration-700"
-        ></iframe>
-      </section>
-
     </div>
   );
 }
