@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
       className={styles.waButton}
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle size={28} className={styles.icon} />
+      <img src="/whatsapp.png" alt="WhatsApp" className="w-8 h-8 object-contain" />
     </a>
   );
 }
