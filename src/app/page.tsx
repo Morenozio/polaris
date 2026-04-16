@@ -40,31 +40,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Company Strength Section */}
-      <section className="py-16 px-8 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">location_on</span>
-              <h3 className="text-xl font-bold mb-2 font-headline text-black">Strategic Location</h3>
-              <p className="text-sm text-secondary font-light">Optimized distribution centers located in key industrial hubs across Indonesia.</p>
-            </div>
-            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">inventory_2</span>
-              <h3 className="text-xl font-bold mb-2 font-headline text-black">Reliable Supply Chain</h3>
-              <p className="text-sm text-secondary font-light">Consistent material availability through robust partnerships with global manufacturers.</p>
-            </div>
-            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
-              <span className="material-symbols-outlined text-3xl mb-4 text-primary">fact_check</span>
-              <h3 className="text-xl font-bold mb-2 font-headline text-black">Wide Product Range</h3>
-              <p className="text-sm text-secondary font-light">Comprehensive portfolio catering to diverse technical specifications and industrial needs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Products Slider Section */}
-      <section className="py-24 bg-surface overflow-hidden">
+      <section className="py-24 bg-surface-container-low overflow-hidden">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -99,6 +76,29 @@ export default function Home() {
             </div>
           </div>
           <p className="text-center mt-12 text-sm text-secondary font-light">Collaborating with industry leaders to provide superior chemical solutions.</p>
+        </div>
+      </section>
+
+      {/* Company Strength Section */}
+      <section className="py-16 px-8 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
+              <span className="material-symbols-outlined text-3xl mb-4 text-primary">location_on</span>
+              <h3 className="text-xl font-bold mb-2 font-headline text-black">Strategic Location</h3>
+              <p className="text-sm text-secondary font-light">Optimized distribution centers located in key industrial hubs across Indonesia.</p>
+            </div>
+            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
+              <span className="material-symbols-outlined text-3xl mb-4 text-primary">inventory_2</span>
+              <h3 className="text-xl font-bold mb-2 font-headline text-black">Reliable Supply Chain</h3>
+              <p className="text-sm text-secondary font-light">Consistent material availability through robust partnerships with global manufacturers.</p>
+            </div>
+            <div className="p-8 bg-surface-container-lowest rounded-lg border-l-2 border-primary">
+              <span className="material-symbols-outlined text-3xl mb-4 text-primary">fact_check</span>
+              <h3 className="text-xl font-bold mb-2 font-headline text-black">Wide Product Range</h3>
+              <p className="text-sm text-secondary font-light">Comprehensive portfolio catering to diverse technical specifications and industrial needs.</p>
+            </div>
+          </div>
         </div>
       </section>
 
