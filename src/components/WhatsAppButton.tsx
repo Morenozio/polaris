@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
       className={styles.waButton}
       aria-label="Chat on WhatsApp"
     >
-      <img src="/whatsapp.png" alt="WhatsApp" className="w-8 h-8 object-contain" />
+      <img src="/whatsapp-white.png" alt="WhatsApp" className="w-8 h-8 object-contain" />
     </a>
   );
 }
