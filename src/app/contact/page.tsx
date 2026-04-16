@@ -63,7 +63,6 @@ export default function ContactPage() {
             <div>
               <h3 className="font-bold text-lg text-black font-headline mb-2">Email Directory</h3>
               <p className="text-secondary font-light mb-1"><strong>Sales:</strong> ary@polaris.co.id</p>
-              <p className="text-secondary font-light"><strong>Inquiries:</strong> info@polaris-multidimensi.com</p>
             </div>
           </div>
           

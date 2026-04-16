@@ -42,7 +42,6 @@ export default function Footer() {
             <img src="/whatsapp.png" alt="WhatsApp" className="w-4 h-4 object-contain" />
             +62 812 7733 5701
           </a>
-          <p className="text-xs text-stone-500">info@polaris-multidimensi.com</p>
         </div>
       </div>
       
